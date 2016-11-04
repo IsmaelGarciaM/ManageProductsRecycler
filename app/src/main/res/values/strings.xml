@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ManageProducts</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="remember">¿Recordar?</string>
+    <string name="btnLogIn">Log in</string>
+    <string name="btnCancel">Cancelar</string>
+    <string name="txvName">Nombre</string>
+    <string name="txvDescription">Descripción</string>
+    <string name="txvBrand">Marca</string>
+    <string name="txvDose">Dosificación</string>
+    <string name="txvPrice">Precio</string>
+    <string name="txvStock">Cantidad</string>
+    <string name="btnOk">Aceptar</string>
+    <string name="btnCancelAdd">Cancelar</string>
+    <string name="action_add_product"></string>
+    <string name="action_sort_product">Ordenar productos</string>
+    <string name="action_setting_general">Configuracion general</string>
+    <string name="action_setting_account">Configuracion personal</string>
+    <string name="linkForget">He olvidado mi contrasenia</string>
+</resources>

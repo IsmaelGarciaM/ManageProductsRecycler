@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_log_in_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.manageproductsrecicled.ManageProducts">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tiluser"
+        android="@style/error"
+        app:errorEnabled="true">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtUser"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/user"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tilpassword"
+        android:layout_below="@id/tiluser"
+        android="@style/error"
+        app:counterMaxLength="20"
+
+
+        app:counterEnabled="true"
+        app:errorEnabled="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/edtUser"
+        android:id="@+id/edtPass"
+        android:hint="@string/pass"
+        android:maxLength="20"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:text="@string/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chbRemember"
+        android:layout_marginTop="@dimen/widget_margin_top"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tilpassword" />
+
+
+        <Button
+            android:text="@string/btnLogIn"
+            android:background="@drawable/selectlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogIn"
+            android:layout_below="@id/chbRemember"
+            android:layout_centerHorizontal="true"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvForget"
+        android:layout_below="@id/btnLogIn"
+        android:autoLink="web"
+        android:text="@string/linkForget"/>
+
+
+</RelativeLayout>

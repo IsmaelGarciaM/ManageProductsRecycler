@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.manageproductsrecicled.ManageProductActivity">
+
+    <TextView
+        android:layout_margin="@dimen/txvSeparator"
+        android:text="@string/txvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_toRightOf="@+id/txvName"
+        android:layout_alignBaseline="@+id/txvName"
+        android:id="@+id/edtName" />
+
+    <TextView
+        android:layout_margin="@dimen/txvSeparator"
+        android:text="@string/txvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvDescription"
+        android:layout_below="@+id/txvName"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/edtName"
+        android:layout_toRightOf="@+id/txvDescription"
+        android:layout_alignBaseline="@+id/txvDescription"
+        android:id="@+id/edtDescription" />
+
+    <TextView
+        android:layout_margin="@dimen/txvSeparator"
+        android:text="@string/txvBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvBrand"
+        android:layout_below="@+id/txvDescription"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/edtDescription"
+        android:layout_toRightOf="@+id/txvBrand"
+        android:layout_alignBaseline="@+id/txvBrand"
+        android:id="@+id/edtBrand" />
+
+    <TextView
+        android:layout_margin="@dimen/txvSeparator"
+        android:text="@string/txvDose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvDose"
+        android:layout_below="@+id/txvBrand"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/edtBrand"
+        android:layout_toRightOf="@+id/txvDose"
+        android:layout_alignBaseline="@+id/txvDose"
+
+        android:id="@+id/edtDose" />
+
+    <TextView
+        android:layout_margin="@dimen/txvSeparator"
+        android:text="@string/txvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvPrice"
+        android:layout_below="@+id/txvDose"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/edtDose"
+        android:layout_toRightOf="@+id/txvPrice"
+        android:layout_alignBaseline="@+id/txvPrice"
+
+        android:id="@+id/edtPrice" />
+
+    <TextView
+        android:layout_margin="@dimen/txvSeparator"
+        android:text="@string/txvStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvStock"
+        android:layout_below="@+id/txvPrice"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/edtPrice"
+        android:layout_alignBaseline="@+id/txvStock"
+        android:layout_toRightOf="@+id/txvStock"
+        android:id="@+id/edtStock" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txvPrice">
+        <include layout="@layout/buttons"/>
+    </LinearLayout>
+</RelativeLayout>
+
